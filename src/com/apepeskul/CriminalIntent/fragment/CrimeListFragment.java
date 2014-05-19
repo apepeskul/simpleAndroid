@@ -1,14 +1,15 @@
-package com.apepeskul.CriminalIntent;
+package com.apepeskul.CriminalIntent.fragment;
 
-import android.app.ListFragment;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
+import com.apepeskul.CriminalIntent.R;
+//import com.apepeskul.CriminalIntent.activity.CrimeActivity;
+import com.apepeskul.CriminalIntent.activity.CrimePagerActivity;
+import com.apepeskul.CriminalIntent.model.Crime;
+import com.apepeskul.CriminalIntent.model.CrimeLab;
 
 import java.text.SimpleDateFormat;
 import java.util.List;
@@ -39,7 +40,7 @@ public class CrimeListFragment extends android.support.v4.app.ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
     Crime c = ((CrimeAdapter)getListAdapter()).getItem(position);
-    Intent intent = new Intent(getActivity(),CrimeActivity.class);
+    Intent intent = new Intent(getActivity(), CrimePagerActivity.class);
     intent.putExtra(CrimeFragment.EXTRA_CRIME_ID, c.getId());
         startActivity(intent);
 

@@ -1,4 +1,4 @@
-package com.apepeskul.CriminalIntent;
+package com.apepeskul.CriminalIntent.model;
 
 import android.content.Context;
 

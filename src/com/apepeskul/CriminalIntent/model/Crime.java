@@ -1,4 +1,4 @@
-package com.apepeskul.CriminalIntent;
+package com.apepeskul.CriminalIntent.model;
 
 import java.util.Date;
 import java.util.UUID;

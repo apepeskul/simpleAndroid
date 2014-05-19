@@ -1,4 +1,6 @@
-package com.apepeskul.CriminalIntent;
+/*package com.apepeskul.CriminalIntent.activity;
+
+import com.apepeskul.CriminalIntent.fragment.CrimeFragment;
 
 import java.util.UUID;
 
@@ -9,4 +11,4 @@ public class CrimeActivity extends SingleFragmentActivity {
         return CrimeFragment.newInstance(crimeId);
     }
 
-}
+}*/

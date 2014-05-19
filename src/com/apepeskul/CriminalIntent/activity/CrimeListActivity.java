@@ -1,6 +1,7 @@
-package com.apepeskul.CriminalIntent;
+package com.apepeskul.CriminalIntent.activity;
 
 import android.support.v4.app.Fragment;
+import com.apepeskul.CriminalIntent.fragment.CrimeListFragment;
 
 /**
  * Created by alex on 18.05.2014.
