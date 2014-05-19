@@ -1,9 +1,9 @@
 package com.apepeskul.CriminalIntent.activity;
 
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.os.Bundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
 import com.apepeskul.CriminalIntent.R;
 
 
@@ -12,7 +12,8 @@ import com.apepeskul.CriminalIntent.R;
  */
 public abstract class SingleFragmentActivity extends FragmentActivity {
 
-protected abstract android.support.v4.app.Fragment createFragment();
+    protected abstract android.support.v4.app.Fragment createFragment();
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

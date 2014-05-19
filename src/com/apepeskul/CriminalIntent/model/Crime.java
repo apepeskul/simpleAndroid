@@ -1,5 +1,7 @@
 package com.apepeskul.CriminalIntent.model;
 
+
+
 import java.util.Date;
 import java.util.UUID;
 
@@ -11,6 +13,7 @@ public class Crime {
     private String mTitle;
     private Date mDate;
     private boolean mSolved;
+
 
     public Crime() {
         mId = UUID.randomUUID();

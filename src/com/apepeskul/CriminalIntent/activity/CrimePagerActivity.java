@@ -2,7 +2,10 @@ package com.apepeskul.CriminalIntent.activity;
 
 
 import android.os.Bundle;
-import android.support.v4.app.*;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentActivity;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import com.apepeskul.CriminalIntent.R;
 import com.apepeskul.CriminalIntent.fragment.CrimeFragment;
@@ -41,8 +44,8 @@ public class CrimePagerActivity extends FragmentActivity {
         });
 
         UUID crimeId = (UUID) getIntent().getSerializableExtra(CrimeFragment.EXTRA_CRIME_ID);
-        for (int i=0; i<mCrimes.size();i++){
-            if (mCrimes.get(i).getId().equals(crimeId)){
+        for (int i = 0; i < mCrimes.size(); i++) {
+            if (mCrimes.get(i).getId().equals(crimeId)) {
                 mViewPager.setCurrentItem(i);
             }
         }
@@ -55,7 +58,7 @@ public class CrimePagerActivity extends FragmentActivity {
             @Override
             public void onPageSelected(int i) {
                 Crime crime = mCrimes.get(i);
-                if (crime!=null){
+                if (crime != null) {
                     setTitle(crime.getTitle());
                 }
             }
@@ -66,7 +69,6 @@ public class CrimePagerActivity extends FragmentActivity {
             }
         });
     }
-
 
 
 }
